@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - EduLearn</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #004080;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    header {
+      background-color: #e0e0e0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #004080;
+    }
+
+    section.courses {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+    }
+
+    .course-card .content {
+      padding: 1rem;
+    }
+
+    .course-card h3 {
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .course-card a {
+      display: inline-block;
+      background-color: #004080;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .course-card a:hover {
+      background-color: #002b5c;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 1rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-section a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">EduLearn</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Explore Our Courses</h1>
+    <p>Interactive video-based courses for young learners</p>
+  </header>
+
+  <section class="courses">
+    <div class="course-grid">
+      <div class="course-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="content">
+          <h3>SUMMERY 1 GITA </h3>
+          <p>Learn basics of GITA  with animated stories and fun activities.</p>
+          <a href="https://youtu.be/M5lsfPat168?si=06nrs1YP9lTvTqA-">Watch Full Course</a>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="content">
+          <h3>Class 2 - Mathematics</h3>
+          <p>Understand numbers, shapes and fun math tricks with visuals.</p>
+          <a href="#">Watch Full Course</a>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="content">
+          <h3>Class 3 - EVS</h3>
+          <p>Explore environment, science and nature through storytelling.</p>
+          <a href="#">Watch Full Course</a>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="content">
+          <h3>Class 4 - Hindi</h3>
+          <p>Build language skills with poems, stories, and interactive exercises.</p>
+          <a href="#">Watch Full Course</a>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="content">
+          <h3>Class 5 - General Knowledge</h3>
+          <p>Learn about the world around you in a simple, fun way.</p>
+          <a href="#">Watch Full Course</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: support@edulearn.com</p>
+      <p>Phone: +91-1234567890</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="notes.html">Notes</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+</body>
+
+</html>
