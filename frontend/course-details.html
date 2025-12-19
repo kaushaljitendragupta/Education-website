@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details | Ignite Learning</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Course Details Styles */
+    .course-details {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .course-details h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    .course-details p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    /* Video Embed */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      border-radius: 10px;
+    }
+
+    /* Notes Button */
+    .notes-link .btn {
+      display: inline-block;
+      background: #28a745;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    .notes-link .btn:hover {
+      background: #218838;
+    }
+    .notes-link .btn::before {
+      content: "📄 ";
+      margin-right: 5px;
+    }
+
+    /* Related Courses */
+    .courses {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .courses h3 {
+      font-size: 24px;
+      margin-bottom: 25px;
+      color: #2c3e50;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .course-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9f9f9;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .course-card:hover {
+      transform: scale(1.03);
+    }
+    .course-card h4 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    .course-card .btn {
+      background: #e67e22;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .course-card .btn:hover {
+      background: #d35400;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ignite Learning</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Course Details -->
+  <section class="course-details">
+    <h2>📘 JavaScript Basics</h2>
+    <p>Learn JavaScript step by step with practical examples. This course covers variables, functions, loops, and DOM manipulation.</p>
+
+    <!-- Video -->
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Notes Button -->
+    <div class="notes-link">
+      <a href="https://drive.google.com/" target="_blank" class="btn">Download Notes</a>
+    </div>
+  </section>
+
+  <!-- Related Courses -->
+  <section class="courses">
+    <h3>Related Courses</h3>
+    <div class="course-grid">
+      <div class="course-card">
+        <h4>HTML & CSS</h4>
+        <a href="course-details.html" class="btn">Watch Full Course</a>
+      </div>
+      <div class="course-card">
+        <h4>Data Structures</h4>
+        <a href="course-details.html" class="btn">Watch Full Course</a>
+      </div>
+      <div class="course-card">
+        <h4>Python Basics
