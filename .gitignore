@@ -38,4 +38,4 @@ out/
 
 
 ###git par ham passsword agera nahi dalana chahate 
-src/main/resources/application.properties
+backend/src/main/resources/application.properties
