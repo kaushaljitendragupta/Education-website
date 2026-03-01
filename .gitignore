@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+###git par ham passsword agera nahi dalana chahate 
+src/main/resources/application.properties
